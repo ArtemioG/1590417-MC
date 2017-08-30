@@ -1,20 +1,52 @@
-import random
-a = []
-for i in range(100):
-	a.append(i)
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> contador=0
+>>> def minimo(array):
+	a=array
+	global contador
+	resultado=-1
+	for i in range(0,len(array)):
+		esminimo=True
+		for j in range (0,len(a)):
+			contador+=1
+			if array[i]>array[j]:
+				esminimno=False
+				break
+			if esminimo:
+				resultado=i
+				break
+			else:
+				a=array
+		return resultado
 
-def minimo(arreglo):
-	auxiliar = arreglo # creo un arreglo auxiliar
-	resultado = 0
-	for a1 in arr: # para cada elemento a1 del arreglo/conjunto
-		auxiliar.pop(a1) # remuevo a1 del conjunto auxiliar
- 		for a2 in auxiliar: # para cada elemento a2 del conjunto auxiliar auxiliar
-			print (a1,a2)
-			if(a1 > a2): #comparo si a1 es mayor que a2
-				break #si lo es, salgo para probar el siguiente a1, si no, comparo a1 con el siguiente a2
-		resultado = a1
-		break
+	
+>>> def ordenar(array):
+	a=array
+	resultado=[]
+	for i in range(0,len(array))
+	
+SyntaxError: invalid syntax
+>>> def ordenar(array):
+	a=array
+	resultado=[]
+	for i in range(0,len(array)):
+		m=minimo(a)
+		resultado.append(a[m])
+		del a[m]
 	return resultado
 
-
-random.shuffle(a)
+>>> import random
+>>> p=random.sample(range(2,102),2)
+>>> contador=0
+>>> 
+>>> print(p)
+[76, 96]
+>>> print(p[minimo(p)])
+76
+>>> print(min(p))
+76
+>>> print(ordenar(p))
+[76, 96]
+>>> print(contador)
+3
+>>> 
