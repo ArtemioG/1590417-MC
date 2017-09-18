@@ -29,7 +29,7 @@ def selection(array):
 	    for j in range(i+1,len(array)):
 	    	if array[j]<array[val]:
     			val=j
-    	    cnt+=1
+                cnt+=1
 	    if val!=i:
 		    aux=array[i]
 		    array[i]=array[val]
